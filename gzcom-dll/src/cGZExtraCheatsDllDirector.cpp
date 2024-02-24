@@ -66,3 +66,8 @@ class cSC4ExtraCheatsPluginCOMDirector : public cRZCOMDllDirector
 			return true;
 		}
 };
+
+cRZCOMDllDirector* RZGetCOMDllDirector() {
+	static cSC4ExtraCheatsPluginCOMDirector sDirector;
+	return &sDirector;
+}

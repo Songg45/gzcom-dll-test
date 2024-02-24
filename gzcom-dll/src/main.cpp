@@ -51,8 +51,3 @@ class cGZCustomDllDirector : public cRZCOMDllDirector
 		bool AbortiveQuit(void) { return true; }
 		bool OnInstall(void) { return true; }
 };
-
-cRZCOMDllDirector* RZGetCOMDllDirector() {
-	static cGZCustomDllDirector sDirector;
-	return &sDirector;
-}
